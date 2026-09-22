@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calc">
+    <div class="calc__display" id="display">
+      <div class="calc__expression" id="expression"></div>
+      <div class="calc__value" id="value">0</div>
+    </div>
+
+    <div class="calc__pad">
+      <button class="key key--fn" data-action="clear">C</button>
+      <button class="key key--fn" data-action="backspace">⌫</button>
+      <button class="key key--fn" data-action="percent">%</button>
+      <button class="key key--op" data-action="operator" data-op="÷">÷</button>
+
+      <button class="key" data-action="digit" data-digit="7">7</button>
+      <button class="key" data-action="digit" data-digit="8">8</button>
+      <button class="key" data-action="digit" data-digit="9">9</button>
+      <button class="key key--op" data-action="operator" data-op="×">×</button>
+
+      <button class="key" data-action="digit" data-digit="4">4</button>
+      <button class="key" data-action="digit" data-digit="5">5</button>
+      <button class="key" data-action="digit" data-digit="6">6</button>
+      <button class="key key--op" data-action="operator" data-op="−">−</button>
+
+      <button class="key" data-action="digit" data-digit="1">1</button>
+      <button class="key" data-action="digit" data-digit="2">2</button>
+      <button class="key" data-action="digit" data-digit="3">3</button>
+      <button class="key key--op" data-action="operator" data-op="+">+</button>
+
+      <button class="key key--wide" data-action="digit" data-digit="0">0</button>
+      <button class="key" data-action="decimal">,</button>
+      <button class="key key--eq" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
